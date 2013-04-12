@@ -28,7 +28,7 @@
       {{#each view.bands}}
         <li {{bindAttr class="isCurrent:current"}}>
           {{prettyTime}}: 
-          <a href="{{link}}">{{name}}</a>
+          <a {{bindAttr href=link}}>{{name}}</a>
         </li>
       {{/each}}
       </ul>
