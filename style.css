@@ -2,12 +2,12 @@
 body {
   font-family: 'Jockey One', sans-serif;
   color: #000;
+  letter-spacing: 2px;
+  text-align: center;
 }
 
 li.current {
   background: #ccc;
-  letter-spacing: 2px;
-  text-align: center;
 }
 
 h1 { 
