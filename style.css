@@ -1,7 +1,17 @@
+/* dinobarf color is 78a72b */
 body {
+  font-family: 'Jockey One', sans-serif;
   color: #000;
 }
 
 li.current {
   background: #ccc;
+  letter-spacing: 2px;
+}
+
+h1 { 
+  color: #602378;
+}
+h2 {
+  color: #B53B2F;
 }
