@@ -2,9 +2,14 @@
 body {
   font-family: 'Jockey One', sans-serif;
   color: #000;
+}
+
+li.current {
+  background: #ccc;
   letter-spacing: 2px;
   text-align: center;
 }
+
 h1 { 
   color: #602378;
 }

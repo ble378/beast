@@ -17,23 +17,22 @@
   <script type='text/javascript' id='lt_ws' src='http://localhost:46949/socket.io/lighttable/ws.js'></script> 
 </head>
 <body>
-  <img src="dinobarf.png" width="500" height="439">
-  <h2>bexley</h2>
-  <h2>4/20</h2>
-  
-  <h1>The Bands</h1>
-  <ul class="row-fluid">
-    <li>3:30 : whatever</li>
-    <li>4:00 : someone else</li>
-    <li>5:00 : Gigantic Ant</li>
-    <li>6:00 : The Daydreamers</li>
-  </ul>
-  <script type="text/x-handlebars">
-    <ul>
-    {{#each model}}
-      <li><a href="{{view.link}}"><b>{{view.prettyTime}} : {{view.band}}</b></li>
-    {{/each}}
-    </ul>
-  </script>
+  <div id="container">
+    <img src="dinobarf.png" width="500" height="439">
+    <h2>bexley</h2>
+    <h2>4/20</h2>
+    
+    <h1>The Bands</h1>
+    <script type="text/x-handlebars" data-template-name="bands">
+      <ul>
+      {{#each view.bands}}
+        <li {{bindAttr class="isCurrent:current"}}>
+          {{prettyTime}}: 
+          <a href="{{link}}">{{name}}</a>
+        </li>
+      {{/each}}
+      </ul>
+    </script>
+  </div>
 </body>
 </html>
