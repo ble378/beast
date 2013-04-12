@@ -1,3 +1,7 @@
 body {
   color: #000;
 }
+
+li.current {
+  background: #ccc;
+}
