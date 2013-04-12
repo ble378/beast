@@ -13,18 +13,27 @@ li.current {
 h1 { 
   color: #602378;
 }
-h2 {
-  color: #B53B2F;
-}
 ul {
   list-style: none;
 }
 li {
   padding: 5px;
-  border: 1px solid black;
   text-align: left;
   font-size: 24px;
 }
 li:hover {
-  background-color: #DA8981;
+  background-color: #B2D37D;
+}
+a {
+  color: #000;
+}
+a:hover {
+  color: #000;
+  text-decoration: none;
+}
+a:visited {
+  color: #000;
+}
+.bandname {
+  color: #B53B2F;
 }

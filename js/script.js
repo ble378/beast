@@ -3,7 +3,7 @@ console.log("HELLO");
 App = Ember.Application.create();
 
 function bandDate(hour, minute){
-  return new Date(2013, 3, 12, hour, minute);
+  return new Date(2013, 3, 20, hour, minute);
 }
 
 App.info = Ember.Object.create({
@@ -51,7 +51,7 @@ App.Band = Ember.Object.extend({
 
 App.bands = [
   App.Band.create({hour: 15, minute: 30, duration: 30,
-                   name: "Anastasia Marov", 
+                   name: "Anastasia Markov", 
                    link: "https://soundcloud.com/anastasia-markov"}),
   App.Band.create({hour: 16, name: "Scuba Parade",
                    link: "https://soundcloud.com/scuba-parade"}),

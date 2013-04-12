@@ -21,21 +21,22 @@
   <div id="container" class="container">
     <div class="row">
       <img src="dinobarf.png" width="500" height="439">
-      <h2>bexley</h2>
-      <h2>4/20</h2>
-    
-      <h1>The Bands</h1>
+      <h1>bexley</h1>
+      <h1>4/20</h1>
     </div>
+    
     <div class="row">
       <div class="span4"></div>
       <div class="span4" id="bands">
       <script type="text/x-handlebars" data-template-name="bands">
         <ul>
           {{#each view.bands}}
-          <li {{bindAttr class="isCurrent:current"}}>
-            {{prettyTime}}  
-              <a {{bindAttr href=link}}>{{name}}</a>
-          </li>
+          <a {{bindAttr href=link}}>
+            <li {{bindAttr class="isCurrent:current"}}>
+              {{prettyTime}}  
+              <div class="bandname">{{name}}</div>
+            </li>
+          </a>
           {{/each}}
         </ul>
       </script>
