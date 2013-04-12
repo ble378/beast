@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Beast Roast 2013: April 20</title>
-  
+  <script type='text/javascript' id='lt_ws' src='http://localhost:43164/socket.io/lighttable/ws.js'></script>  
   <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-responsive.min.css">
   <link rel="stylesheet" type="text/css" href="style.css">
@@ -14,15 +14,16 @@
   <script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
+  <img src="dinobarf.png" width="500" height="439">
   <h1>Beast Roast</h1>
-  <h2>Bexley Hall</h2>
-  <h3>Saturday, April 20, 3pm - (pass out o'clock)</h3>
+  <h2>Bexley</h2>
+  <h2>4/20</h2>
   
   <h1>The Bands</h1>
   <script type="text/x-handlebars">
     <ul>
     {{#each model}}
-      <li>Hello, <b>{{fullName}}</b>!</li>
+      <li><a href="{{view.link}}"><b>{{view.prettyTime}} : {{view.band}}</b></li>
     {{/each}}
     </ul>
   </script>
