@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Beast Roast 2013: April 20</title>
+  
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-responsive.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+ 
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
+  <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/handlebars.js"></script>
+  <script type="text/javascript" src="js/ember-1.0.0-rc.2.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+  <h1>Beast Roast</h1>
+  <h2>Bexley Hall</h2>
+  <h3>Saturday, April 20, 3pm - (pass out o'clock)</h3>
+  
+  <h1>The Bands</h1>
+  <script type="text/x-handlebars">
+    <ul>
+    {{#each model}}
+      <li>Hello, <b>{{fullName}}</b>!</li>
+    {{/each}}
+    </ul>
+  </script>
+</body>
+</html>
