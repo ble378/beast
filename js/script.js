@@ -45,7 +45,7 @@ App.Band = Ember.Object.extend({
     }
     var minutes = ""+time.getMinutes();
     if (minutes.length != 2) { minutes = "0"+minutes; }
-    return "" + hours + ":" + minutes + " " + ampm;
+  return "" + hours + ":" + minutes;
   }.property('time')
 });
 
@@ -57,7 +57,7 @@ App.bands = [
                    link: "https://soundcloud.com/scuba-parade"}),
   App.Band.create({hour: 17, name: "Gigantic Ant",
                    link: "http://giganticant.bandcamp.com/"}),
-  App.Band.create({hour: 18, name: "The Ddaydreamers",
+  App.Band.create({hour: 18, name: "The Daydreamers",
                    link: "http://thedaydreamersmusic.com/epk"}),
   App.Band.create({hour: 19, name: "thickthickfunksludge"}),
   App.Band.create({hour: 20, name: "Rolltreppe",
@@ -77,7 +77,7 @@ $(document).ready(function(){
   // update every minute
   var timer = setInterval(App.info.tick, 1000*60);
   App.info.tick();
-  App.bandView.appendTo("#container");
+  App.bandView.appendTo("#bands");
 });
 
 // App.bands[0].get('prettyTime');

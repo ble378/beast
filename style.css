@@ -17,12 +17,9 @@ h2 {
   color: #B53B2F;
 }
 ul {
-  width: 40%;
   list-style: none;
-  margin: 0 auto;
 }
 li {
-  margin-left: 35%;
   padding: 5px;
   border: 1px solid black;
   text-align: left;

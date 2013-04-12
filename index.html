@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Beast Roast 2013: April 20</title>
   <script type='text/javascript' id='lt_ws' src='http://localhost:43164/socket.io/lighttable/ws.js'></script>  
   <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
@@ -17,22 +18,31 @@
   <script type='text/javascript' id='lt_ws' src='http://localhost:46949/socket.io/lighttable/ws.js'></script> 
 </head>
 <body>
-  <div id="container">
-    <img src="dinobarf.png" width="500" height="439">
-    <h2>bexley</h2>
-    <h2>4/20</h2>
+  <div id="container" class="container">
+    <div class="row">
+      <img src="dinobarf.png" width="500" height="439">
+      <h2>bexley</h2>
+      <h2>4/20</h2>
     
-    <h1>The Bands</h1>
-    <script type="text/x-handlebars" data-template-name="bands">
-      <ul>
-      {{#each view.bands}}
-        <li {{bindAttr class="isCurrent:current"}}>
-          {{prettyTime}}: 
-          <a {{bindAttr href=link}}>{{name}}</a>
-        </li>
-      {{/each}}
-      </ul>
-    </script>
+      <h1>The Bands</h1>
+    </div>
+    <div class="row">
+      <div class="span4"></div>
+      <div class="span4" id="bands">
+      <script type="text/x-handlebars" data-template-name="bands">
+        <ul>
+          {{#each view.bands}}
+          <li {{bindAttr class="isCurrent:current"}}>
+            {{prettyTime}}  
+              <a {{bindAttr href=link}}>{{name}}</a>
+          </li>
+          {{/each}}
+        </ul>
+      </script>
+      </div>
+      <div class="span4"></div>
+    </div>
   </div>
+  
 </body>
 </html>
