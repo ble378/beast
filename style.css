@@ -1,6 +1,7 @@
 /* dinobarf color is 78a72b */
 body {
   font-family: 'Jockey One', sans-serif;
+  background-color: #ccc;
   color: #000;
   letter-spacing: 2px;
   text-align: center;
@@ -22,7 +23,7 @@ li {
   font-size: 24px;
 }
 li:hover {
-  background-color: #B2D37D;
+  background-color: #A772BC;
 }
 a {
   color: #000;
@@ -36,4 +37,40 @@ a:visited {
 }
 .bandname {
   color: #B53B2F;
+}
+#dinobarf {
+  cursor: pointer;
+}
+#dinobarf-purple {
+  display: none;
+  cursor: pointer;
+}
+#gremlin1 {
+  display: none;
+}
+#gremlin2 {
+  display: none;
+}
+#preg {
+  display: none;
+}
+#pregexplosion {
+  display: none;
+}
+#pregbaby {
+  display: none;
+}
+#notpreg {
+  display: none;
+}
+#baby {
+  display: none;
+}
+#gemini {
+  display: none;
+}
+#squirrel {
+  display: none;
+  float: left;
+  z-index: 100;
 }
